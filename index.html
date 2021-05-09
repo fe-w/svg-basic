@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SVG</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    p, a, ul, li, span {padding: 0; margin: 10px 0;}
+    h3 {color: #ff6d6d; border-bottom: 1px solid #eee; width: 100%;}
+    section {
+      margin-bottom: 10px;
+      display: flex;
+      flex-direction: column;
+      width: 700px;
+      height: auto;
+      border-top: 1px solid #ddd;
+      margin: 40px 0;
+    }
+    section:nth-of-type(1) {
+      flex-wrap: wrap;
+      flex-direction: revert;
+    }
+    section:nth-of-type(1) div {
+      width: 250px;
+      height: 200px;
+    }
+    section p {display: flex;}
+    section span:before {
+      content: '<![CDATA 스타일 ]>';
+      color: #a0a0a0;
+      font-size: 0.75rem;
+    }
+    li {list-style: inside;}
+    p {font-size: 0.875rem;}
+    a {font-size: 0.75rem; color: #b5b5b5; text-decoration: none;}
+    svg {background: #e4e4e4; width: 200px;}
+    .svg1 {width: 100px;}
+    .shapes {position: relative;}
+    .shapes rect {
+      position: absolute;
+    }
+    .shapes circle {
+      position: absolute;
+    }
+    .shapes ellipse {
+      position: absolute;
+    }
+  </style>
+</head>
+<body>
+  <section>
+    <h3>[1] SVG</h3>
+    <ul>
+      <li>1. svg 안에 style과 js를 넣을수도 있고, 따로 뺄수도 있습니다.</li>
+      <li>2. svg안에 넣는 경우 xml 파서에서 오류나는 경우가 생기면 <span></span> 를 추가</li>
+    </ul>
+    <div>
+      <p>3. 압축 전</p>
+      <p><a href="https://www.freepik.com/free-vector/mixed-emoji-set_4159931.htm">이미지링크</a></p>
+      <svg class="svg1"
+      xmlns="http://www.w3.org/2000/svg" viewBox="0 0 170.47 170.47">
+      <defs>
+        <style>
+          .cls-1{fill:#ffd8fb;}
+          .cls-2{fill:#ecbbe7;}
+          .cls-3{fill:#ffcbfa;}
+          .cls-4{fill:#5e4939;}
+          .cls-5{fill:#303030;}
+          .cls-6{fill:#f5a6ac;}
+        </style>
+      </defs>
+      <title>자산 1</title>
+      <g id="레이어_2" data-name="레이어 2">
+        <g id="Object">
+          <circle class="cls-1" cx="85.24" cy="85.24" r="85.24" transform="translate(-35.31 85.24) rotate(-45)"/>
+          <path class="cls-2" d="M129.83,12.49A85.25,85.25,0,0,1,13.41,131.05,85.24,85.24,0,1,0,129.83,12.49Z"/>
+          <path class="cls-3" d="M11.58,94.23A79.13,79.13,0,0,1,153.45,46,79.14,79.14,0,1,0,22.1,133.67,78.75,78.75,0,0,1,11.58,94.23Z"/>
+          <path class="cls-4" d="M50.3,94a2.82,2.82,0,0,0-4.58,3.07,42.72,42.72,0,0,0,79,.78,2.81,2.81,0,0,0-4.54-3.1C107.72,106.87,81.24,124.08,50.3,94Z"/>
+          <path class="cls-5" d="M107.24,66.59a15.8,15.8,0,0,0,29.21.29,2.54,2.54,0,0,0-4.11-2.81c-4.73,4.59-12.2,8.27-21-.25a2.55,2.55,0,0,0-1.77-.73,2.58,2.58,0,0,0-1.42.44A2.53,2.53,0,0,0,107.24,66.59Z"/>
+          <path class="cls-5" d="M34,66.59a15.79,15.79,0,0,0,29.2.29,2.54,2.54,0,0,0-4.1-2.81c-4.73,4.59-12.21,8.27-21-.25a2.55,2.55,0,0,0-1.77-.73,2.58,2.58,0,0,0-1.42.44A2.52,2.52,0,0,0,34,66.59Z"/>
+          <circle class="cls-6" cx="22.57" cy="97.1" r="14.88"/>
+          <circle class="cls-6" cx="147.9" cy="97.1" r="14.88"/>
+        </g>
+      </g>
+    </svg>
+    </div>
+    <div>
+      <p>4. 압축 후 </p>
+      <p><a href="https://jakearchibald.github.io/svgomg/">압축한 사이트,</a> <a href="https://jsonformatter.org/html-pretty-print">SVG prettier</a></p>
+      <svg class="svg1"
+      xmlns="http://www.w3.org/2000/svg" viewBox="0 0 170.47 170.47">
+      <defs>
+        <style>
+          .cls-5{fill:#303030}
+          .cls-6{fill:#f5a6ac}
+        </style>
+      </defs>
+      <g id="레이어_2" data-name="레이어 2">
+        <g id="Object">
+          <circle cx="85.24" cy="85.24" r="85.24" transform="rotate(-45 85.239 85.243)" fill="#ffd05d"/>
+          <path d="M129.83 12.49A85.25 85.25 0 0113.41 131.05 85.24 85.24 0 10129.83 12.49z" fill="#fdc453"/>
+          <path d="M11.58 94.23A79.13 79.13 0 01153.45 46 79.14 79.14 0 1022.1 133.67a78.75 78.75 0 01-10.52-39.44z" fill="#ffd77f"/>
+          <path d="M50.3 94a2.82 2.82 0 00-4.58 3.07 42.72 42.72 0 0079 .78 2.81 2.81 0 00-4.54-3.1c-12.46 12.12-38.94 29.33-69.88-.75z" fill="#5e4939"/>
+          <path class="cls-5" d="M107.24 66.59a15.8 15.8 0 0029.21.29 2.54 2.54 0 00-4.11-2.81c-4.73 4.59-12.2 8.27-21-.25a2.55 2.55 0 00-1.77-.73 2.58 2.58 0 00-1.42.44 2.53 2.53 0 00-.91 3.06zM34 66.59a15.79 15.79 0 0029.2.29 2.54 2.54 0 00-4.1-2.81c-4.73 4.59-12.21 8.27-21-.25a2.55 2.55 0 00-1.77-.73 2.58 2.58 0 00-1.42.44 2.52 2.52 0 00-.91 3.06z"/>
+          <circle class="cls-6" cx="22.57" cy="97.1" r="14.88"/>
+          <circle class="cls-6" cx="147.9" cy="97.1" r="14.88"/>
+        </g>
+      </g>
+    </svg>
+    </div>
+    <div>
+      <p>5. 압축 후 </p>
+      <p>CSS 애니메이션 적용</p>
+      <svg class="svg1 svg-ani" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 170.47 170.47">
+      <defs>
+        <style>
+          .cls-5{fill:#303030}
+          .cls-6{fill:#f5a6ac}
+          .svg-ani .cls-6 {
+            animation: ani 1s infinite alternate;
+            transform-origin: 50% 50%;
+          }
+          @keyframes ani {
+            0% {transform: scale(0.9);}
+            100% {transform: scale(1); fill: #ff7a85;}
+          }
+        </style>
+      </defs>
+      <g id="레이어_2" data-name="레이어 2">
+        <g id="Object">
+          <circle cx="85.24" cy="85.24" r="85.24" transform="rotate(-45 85.239 85.243)" fill="#ffd05d"/>
+          <path d="M129.83 12.49A85.25 85.25 0 0113.41 131.05 85.24 85.24 0 10129.83 12.49z" fill="#fdc453"/>
+          <path d="M11.58 94.23A79.13 79.13 0 01153.45 46 79.14 79.14 0 1022.1 133.67a78.75 78.75 0 01-10.52-39.44z" fill="#ffd77f"/>
+          <path d="M50.3 94a2.82 2.82 0 00-4.58 3.07 42.72 42.72 0 0079 .78 2.81 2.81 0 00-4.54-3.1c-12.46 12.12-38.94 29.33-69.88-.75z" fill="#5e4939"/>
+          <path class="cls-5" d="M107.24 66.59a15.8 15.8 0 0029.21.29 2.54 2.54 0 00-4.11-2.81c-4.73 4.59-12.2 8.27-21-.25a2.55 2.55 0 00-1.77-.73 2.58 2.58 0 00-1.42.44 2.53 2.53 0 00-.91 3.06zM34 66.59a15.79 15.79 0 0029.2.29 2.54 2.54 0 00-4.1-2.81c-4.73 4.59-12.21 8.27-21-.25a2.55 2.55 0 00-1.77-.73 2.58 2.58 0 00-1.42.44 2.52 2.52 0 00-.91 3.06z"/>
+          <circle class="cls-6" cx="22.57" cy="97.1" r="14.88"/>
+          <circle class="cls-6" cx="147.9" cy="97.1" r="14.88"/>
+        </g>
+      </g>
+    </svg>
+    <p>@keyframes scale 적용</p>
+    <p>infinite 무한반복</p>
+    <p>alternate 부드럽게</p>
+    </div>
+    <div>
+      <p>6. 압축 후 </p>
+      <p>CSS, JS 적용</p>
+      <svg class="svg1 svg-ani-js" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 170.47 170.47">
+      <defs>
+        <style>
+          .cls-5{fill:#303030}
+          .cls-6{fill:#f5a6ac}
+          .svg-ani-js { cursor: pointer;}
+          .ani-on .cls-6 {
+            animation: ani 1s infinite alternate;
+            transform-origin: 50% 50%;
+          }
+          @keyframes ani {
+            0% {transform: scale(0.9);}
+            100% {transform: scale(1); fill: #ff7a85;}
+          }
+        </style>
+        <script>
+          const El = document.querySelector('.svg-ani-js');
+          El.addEventListener('click', function () {
+            this.classList.toggle('ani-on');
+          });
+        </script>
+      </defs>
+      <g id="레이어_2" data-name="레이어 2">
+        <g id="Object">
+          <circle cx="85.24" cy="85.24" r="85.24" transform="rotate(-45 85.239 85.243)" fill="#ffd05d"/>
+          <path d="M129.83 12.49A85.25 85.25 0 0113.41 131.05 85.24 85.24 0 10129.83 12.49z" fill="#fdc453"/>
+          <path d="M11.58 94.23A79.13 79.13 0 01153.45 46 79.14 79.14 0 1022.1 133.67a78.75 78.75 0 01-10.52-39.44z" fill="#ffd77f"/>
+          <path d="M50.3 94a2.82 2.82 0 00-4.58 3.07 42.72 42.72 0 0079 .78 2.81 2.81 0 00-4.54-3.1c-12.46 12.12-38.94 29.33-69.88-.75z" fill="#5e4939"/>
+          <path class="cls-5" d="M107.24 66.59a15.8 15.8 0 0029.21.29 2.54 2.54 0 00-4.11-2.81c-4.73 4.59-12.2 8.27-21-.25a2.55 2.55 0 00-1.77-.73 2.58 2.58 0 00-1.42.44 2.53 2.53 0 00-.91 3.06zM34 66.59a15.79 15.79 0 0029.2.29 2.54 2.54 0 00-4.1-2.81c-4.73 4.59-12.21 8.27-21-.25a2.55 2.55 0 00-1.77-.73 2.58 2.58 0 00-1.42.44 2.52 2.52 0 00-.91 3.06z"/>
+          <circle class="cls-6" cx="22.57" cy="97.1" r="14.88"/>
+          <circle class="cls-6" cx="147.9" cy="97.1" r="14.88"/>
+        </g>
+      </g>
+    </svg>
+      <p>클릭 시 class name 추가되면서</p>
+      <p>추가된 class에 css 애니메이션 적용</p>
+      <p>다시 클릭하면 class name 사라짐</p>
+    </div>
+  </section>
+  <section class="shapes">
+    <h3>[2] 도형</h3>
+    <div>
+      <p>1. 사각형, 원, 타원</p>
+      <svg>
+        <rect x="90" y="40" width="100" height="100" fill="#f5a6ac" ></rect>
+      </svg>
+      <svg>
+        <circle cx="50" cy="70" r="50" fill="#f5a6ac"></circle>
+      </svg>
+      <svg>
+        <ellipse cx="100" cy="80" rx="80" ry="30" fill="#f5a6ac"></ellipse>
+      </svg>
+    </div>
+    <div>
+      <p>2. 라인, 폴리라인, 폴리곤</p>
+      <svg>
+        <line x1="10" x2="100" y1="10" y2="100" stroke="#f5a6ac"></line>
+      </svg>
+      <svg>
+        <polyline points="10 10, 200 50, 150 100" stroke="#f5a6ac" stroke-width="5" fill="white"></polyline>
+      </svg>
+      <svg>
+        <polygon points="10 10, 200 50, 150 100" stroke="#f5a6ac" stroke-width="5" fill="white"></polygon>
+      </svg>
+    </div>
+  </section>  
+  
+</body>
+</html>
