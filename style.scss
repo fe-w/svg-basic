@@ -11,7 +11,7 @@ p, a, ul, li, span {padding: 0; margin: 0;}
 
 /* dom node */
 body {display: flex; flex-direction: column; justify-content: center; align-items: center;}
-h1 a {font-size: 1.5rem; margin-top: 50px; color: #ff6d6d;}
+h1 > a {font-size: 1.5rem; margin-top: 50px; color: #ff6d6d;}
 h3 {color: #ff6d6d; border-bottom: 1px solid #eee; width: 100%;}
 li {list-style: none; font-size: 0.75rem;}
 p {font-size: 0.75rem; padding: 4px 0;}
