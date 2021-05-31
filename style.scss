@@ -36,19 +36,30 @@ section {
 }
 
 .top {
-  width:   15px;
-  height:  15px;
-  padding: 15px;
-  border: 1px solid;
   position: fixed;
   right: 50px;
   bottom: 20px;
-  border-radius: 50%;
-  cursor: pointer;
+  
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   z-index: 99999;
+  .github {
+    margin-bottom: 10px;
+  }
+  .up {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:   15px;
+    height:  15px;
+    padding: 15px;
+    border: 1px solid;
+    border-radius: 50%;
+    cursor: pointer;
+  }
   @media (max-width: 700px) {
     right: 20px;
   }
@@ -350,7 +361,7 @@ section {
     transform-origin: 50% 50%;
     @keyframes move {
       0%   { transform: scale(1)   translate(0px, 20px); }
-      40%  { transform: scale(1.5, 1) translate(0vw, 13vh); }
+      40%  { transform: scale(1.5, 1) translate(0vw, 5vh); }
       // 60%  { transform: scale(0.5, 1.8) translate(0vw, 10vh);}
       // 80%  { transform: scale(1, 0.5) translate(0vw, 0vh); }
       100% { transform: scale(1)   translate(0px, 20px); }
@@ -358,7 +369,9 @@ section {
   }
 }
 
-
+footer {
+  padding: 100px 0;
+}
 @media (max-width: 900px) {
   section {
     width: 90%;

@@ -84,18 +84,16 @@ section:nth-of-type(1) {
 }
 
 .top {
-  width: 15px;
-  height: 15px;
-  padding: 15px;
-  border: 1px solid;
   position: fixed;
   right: 50px;
   bottom: 20px;
-  border-radius: 50%;
-  cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -103,6 +101,32 @@ section:nth-of-type(1) {
       -ms-flex-align: center;
           align-items: center;
   z-index: 99999;
+}
+
+.top .github {
+  margin-bottom: 10px;
+}
+
+.top .up {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 15px;
+  height: 15px;
+  padding: 15px;
+  border: 1px solid;
+  border-radius: 50%;
+  cursor: pointer;
 }
 
 @media (max-width: 700px) {
@@ -570,8 +594,8 @@ section:nth-of-type(1) {
             transform: scale(1) translate(0px, 20px);
   }
   40% {
-    -webkit-transform: scale(1.5, 1) translate(0vw, 13vh);
-            transform: scale(1.5, 1) translate(0vw, 13vh);
+    -webkit-transform: scale(1.5, 1) translate(0vw, 5vh);
+            transform: scale(1.5, 1) translate(0vw, 5vh);
   }
   100% {
     -webkit-transform: scale(1) translate(0px, 20px);
@@ -585,13 +609,17 @@ section:nth-of-type(1) {
             transform: scale(1) translate(0px, 20px);
   }
   40% {
-    -webkit-transform: scale(1.5, 1) translate(0vw, 13vh);
-            transform: scale(1.5, 1) translate(0vw, 13vh);
+    -webkit-transform: scale(1.5, 1) translate(0vw, 5vh);
+            transform: scale(1.5, 1) translate(0vw, 5vh);
   }
   100% {
     -webkit-transform: scale(1) translate(0px, 20px);
             transform: scale(1) translate(0px, 20px);
   }
+}
+
+footer {
+  padding: 100px 0;
 }
 
 @media (max-width: 900px) {
